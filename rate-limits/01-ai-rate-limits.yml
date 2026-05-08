@@ -10,26 +10,24 @@ tags:
 - AI
 - LLM
 - Yi
-- Open Source
-- Foundation Models
 - Rate Limiting
-- Quotas
-- Throttling
-description: Placeholder rate-limit artifact for 01.AI. Replace with real limits once researched.
-notes: Initial scaffold — limits have not yet been reconciled.
+description: >-
+  01.AI / Lingyiwanwu does not publish a public English rate-limit table. Limits are tier-based
+  on the platform console. Exponential backoff with Retry-After should be honored.
+notes: Confirm with the platform console; English documentation is limited.
 sources:
-- https://www.01.ai/
+- https://platform.lingyiwanwu.com/
 responseCodes:
   throttled: 429
 limits:
 - name: Default
   scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+  metric: requests-per-minute
+  limit: see platform console
+  notes: Tiered by plan; published in the Chinese console.
 policies:
 - name: Backoff Strategy
-  description: Clients should implement exponential backoff with jitter and honor any Retry-After header.
+  description: Exponential backoff with jitter; honor Retry-After.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

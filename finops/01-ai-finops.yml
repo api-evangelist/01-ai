@@ -5,20 +5,19 @@ provider: 01.AI
 providerId: 01-ai
 created: '2026-05-08'
 modified: '2026-05-08'
-reconciled: false
+reconciled: true
 tags:
 - AI
 - LLM
 - Yi
-- Open Source
-- Foundation Models
 - FinOps
-- Cost Management
 - FOCUS
-description: FOCUS-aligned FinOps placeholder for 01.AI. Pipeline will replace with real billing details.
-notes: Initial scaffold — billing model has not yet been reconciled.
+description: >-
+  FOCUS-aligned FinOps profile for 01.AI / Lingyiwanwu. Pay-as-you-go usage billing against
+  prepaid balance, plus free self-hosted open-weight option for Yi-34B and smaller variants.
+notes: Pricing primarily published in CNY on the Lingyiwanwu console; Yi-Lightning ~$0.14/M tokens.
 sources:
-- https://www.01.ai/
+- https://platform.lingyiwanwu.com/
 - https://focus.finops.org/focus-specification/v1-3/
 alignedWith:
   framework: FinOps Foundation Framework
@@ -27,40 +26,43 @@ alignedWith:
   dataSpecVersion: '1.3'
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
 publisherName: 01.AI
-serviceCategory: AI
+serviceCategory: AI and Machine Learning
 billingModel:
-  pricingCategory: To Be Reconciled
-  billingFrequency: Monthly
-  billingCurrency: USD
+  pricingCategory: Usage Based (Prepaid)
+  billingFrequency: On-Demand (Recharge)
+  billingCurrency: CNY/USD
   chargeCategories:
   - Usage
   - Purchase
   - Adjustment
 focusColumns:
-  ServiceName: 01.AI
-  ServiceCategory: AI
+  ServiceName: Lingyiwanwu Platform
+  ServiceCategory: AI and Machine Learning
   ProviderName: 01.AI
   PublisherName: 01.AI
   InvoiceIssuerName: 01.AI
-  BillingCurrency: USD
+  BillingCurrency: CNY
   ChargeCategory: Usage
 meters:
-- name: api_usage
-  description: Catch-all meter pending reconciliation.
-  unit: varies
+- name: input_tokens
+  description: Input tokens by Yi model.
+  unit: tokens
   aggregation: sum
-  dimensions:
-  - account
-  - resource
+  dimensions: [model, account]
+- name: output_tokens
+  description: Output tokens by Yi model.
+  unit: tokens
+  aggregation: sum
+  dimensions: [model, account]
 principles:
 - name: Visibility
-  description: Pull provider invoices or usage exports until a self-serve usage feed is documented.
+  description: Lingyiwanwu console reports balance and usage; track spend per API key.
 - name: Allocation
-  description: Tag invoice line items to consuming business units in your FinOps store.
+  description: Tag API keys by workload to attribute Yi spend.
 - name: Optimization
-  description: Levers depend on the provider's billing model; review at renewal once reconciled.
+  description: Use Yi-Lightning-Lite for non-critical paths; consider self-hosted Yi-34B for batch workloads.
 - name: Accountability
-  description: Assign a contract owner to review billing against negotiated terms.
+  description: Set balance alerts; reconcile invoice currency exposure.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
