@@ -1,7 +1,7 @@
 aid: 01-ai
 url: https://raw.githubusercontent.com/api-evangelist/01-ai/refs/heads/main/apis.yml
 name: 01.AI
-x-type: company
+kind: company
 description: >-
   01.AI, founded by Kai-Fu Lee, is the creator of the Yi family of open-source and
   proprietary LLMs. The Lingyiwanwu open platform exposes OpenAI-compatible inference for
