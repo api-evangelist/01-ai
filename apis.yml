@@ -46,6 +46,8 @@ apis:
       - type: Pricing
         url: https://platform.lingyiwanwu.com/
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/01-ai
   - type: Website
     url: https://www.01.ai/
   - type: Documentation
