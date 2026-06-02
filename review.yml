@@ -1,0 +1,38 @@
+name: 01.AI (Lingyiwanwu)
+description: 01.AI Lingyiwanwu Platform API streaming review for AsyncAPI modeling.
+url: https://raw.githubusercontent.com/api-evangelist/01-ai/refs/heads/main/review.yml
+created: '2026-05-29'
+modified: '2026-05-29'
+reviews:
+  - date: '2026-05-29'
+    rating: 2
+    summary: >-
+      01.AI's Lingyiwanwu open platform (platform.lingyiwanwu.com) remains operational —
+      the console still issues API keys and https://api.lingyiwanwu.com/v1/models responds
+      (HTTP 400 to anonymous GET, not 404), and 01.AI's corporate site (www.01.ai) continues
+      to market Yi-Lightning and the WorldWise enterprise stack. However, the public
+      English-language API reference paths probed during this review
+      (/docs/api-reference, /docs/api-reference/chat, /docs/api, /playground/yi-mixed-docs)
+      all returned HTTP 404, leaving no authoritative source for SSE event names, delta
+      schemas, finish-reason values, usage payloads, or error envelopes. The platform is
+      documented as OpenAI-compatible, and an OpenAI-shaped chat completion is reasonable
+      to assume, but no concrete streaming wire format can be confirmed from public docs
+      at this time. Per the no-fabrication rule, an AsyncAPI 2.6 channel was NOT authored;
+      this review.yml is filed as the documented fallback. Re-evaluate when 01.AI restores
+      a public API reference or publishes a stream specification.
+    endpoints:
+      - url: https://platform.lingyiwanwu.com/docs/api-reference
+        status: 404
+      - url: https://platform.lingyiwanwu.com/docs/api-reference/chat
+        status: 404
+      - url: https://platform.lingyiwanwu.com/docs/api
+        status: 404
+      - url: https://platform.lingyiwanwu.com/playground/yi-mixed-docs
+        status: 404
+      - url: https://api.lingyiwanwu.com/v1/models
+        status: 400
+        note: Anonymous probe returns 400 (not 404); host is live and OpenAI-compatible auth is expected.
+      - url: https://platform.lingyiwanwu.com/
+        status: 200
+      - url: https://www.01.ai/
+        status: 200
