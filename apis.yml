@@ -6,7 +6,7 @@ description: >-
   01.AI, founded by Kai-Fu Lee, is the creator of the Yi family of open-source and
   proprietary LLMs. The Lingyiwanwu open platform exposes OpenAI-compatible inference for
   Yi-Lightning, Yi-Lightning-Lite, Yi-Large, and Yi-Vision.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - AI
   - LLM
@@ -24,7 +24,7 @@ apis:
       OpenAI-compatible chat completions and vision endpoints for the Yi model family. Base URL
       https://api.lingyiwanwu.com/v1. Available models include Yi-Lightning, Yi-Lightning-Lite,
       Yi-Large, Yi-Large-Turbo, and Yi-Vision.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://platform.lingyiwanwu.com/docs
     baseURL: https://api.lingyiwanwu.com/v1
     tags:
