@@ -46,6 +46,10 @@ apis:
       - type: Pricing
         url: https://platform.lingyiwanwu.com/
 common:
+  - type: DomainSecurity
+    url: security/01-ai-domain-security.yml
+  - type: Authentication
+    url: authentication/01-ai-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/01-ai
   - type: Website
@@ -62,6 +66,8 @@ common:
     url: finops/01-ai-finops.yml
   - type: Review
     url: review.yml
+  - url: https://www.lingyiwanwu.com/blog
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
