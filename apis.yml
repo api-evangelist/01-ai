@@ -46,6 +46,8 @@ apis:
       - type: Pricing
         url: https://platform.lingyiwanwu.com/
 common:
+  - type: AgenticAccess
+    url: agentic-access/01-ai-agentic-access.yml
   - type: DomainSecurity
     url: security/01-ai-domain-security.yml
   - type: Authentication
