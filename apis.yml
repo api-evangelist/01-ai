@@ -6,7 +6,20 @@ description: >-
   01.AI, founded by Kai-Fu Lee, is the creator of the Yi family of open-source and
   proprietary LLMs. The Lingyiwanwu open platform exposes OpenAI-compatible inference for
   Yi-Lightning, Yi-Lightning-Lite, Yi-Large, and Yi-Vision.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/01-ai.png
 tags:
   - AI
   - LLM
@@ -18,33 +31,42 @@ created: '2026-05-08'
 modified: '2026-05-29'
 specificationVersion: '0.19'
 apis:
-  - aid: 01-ai:platform
-    name: Lingyiwanwu Platform API
-    description: >-
-      OpenAI-compatible chat completions and vision endpoints for the Yi model family. Base URL
-      https://api.lingyiwanwu.com/v1. Available models include Yi-Lightning, Yi-Lightning-Lite,
-      Yi-Large, Yi-Large-Turbo, and Yi-Vision.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://platform.lingyiwanwu.com/docs
-    baseURL: https://api.lingyiwanwu.com/v1
-    tags:
-      - AI
-      - LLM
-      - Chat Completions
-      - Vision
-      - OpenAI Compatible
-      - Yi
-    properties:
-      - type: Documentation
-        url: https://platform.lingyiwanwu.com/docs
-      - type: Signup
-        url: https://platform.lingyiwanwu.com/
-      - type: GitHub
-        url: https://github.com/01-ai/Yi
-      - type: TechBlog
-        url: https://01-ai.github.io/
-      - type: Pricing
-        url: https://platform.lingyiwanwu.com/
+- aid: 01-ai:platform
+  name: Lingyiwanwu Platform API
+  description: >-
+    OpenAI-compatible chat completions and vision endpoints for the Yi model family. Base URL https://api.lingyiwanwu.com/v1.
+    Available models include Yi-Lightning, Yi-Lightning-Lite, Yi-Large, Yi-Large-Turbo, and Yi-Vision.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://platform.lingyiwanwu.com/docs
+  baseURL: https://api.lingyiwanwu.com/v1
+  tags:
+  - AI
+  - LLM
+  - Chat Completions
+  - Vision
+  - OpenAI Compatible
+  - Yi
+  properties:
+  - type: Documentation
+    url: https://platform.lingyiwanwu.com/docs
+  - type: Signup
+    url: https://platform.lingyiwanwu.com/
+  - type: GitHub
+    url: https://github.com/01-ai/Yi
+  - type: TechBlog
+    url: https://01-ai.github.io/
+  - type: Pricing
+    url: https://platform.lingyiwanwu.com/
+- aid: 01-ai:01-ai-chat-api
+  name: 01.AI Chat API
+  description: OpenAI-compatible chat completions for Yi text and vision models.
+  humanURL: https://platform.lingyiwanwu.com/docs
+  baseURL: https://api.lingyiwanwu.com/v1
+  tags:
+  - Chat
+  properties:
+  - type: OpenAPI
+    url: openapi/01-ai-chat-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/01-ai-agentic-access.yml
