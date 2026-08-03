@@ -1,0 +1,14 @@
+{
+  "provider": "01-ai",
+  "sources": [
+    "01-ai-chat-api-openapi.yml"
+  ],
+  "outputs": [
+    "01-ai-chat-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
