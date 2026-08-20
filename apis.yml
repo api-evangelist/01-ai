@@ -21,6 +21,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/01-ai.png
 tags:
+  - Artificial Intelligence
+  - LLM
+  - Yi
+  - Open-Source
+  - Foundation Models
+  - Inference
+tags_raw:
   - AI
   - LLM
   - Yi
@@ -40,6 +47,13 @@ apis:
   humanURL: https://platform.lingyiwanwu.com/docs
   baseURL: https://api.lingyiwanwu.com/v1
   tags:
+  - Artificial Intelligence
+  - LLM
+  - Chat Completions
+  - Vision
+  - OpenAI-Compatible
+  - Yi
+  tags_raw:
   - AI
   - LLM
   - Chat Completions
