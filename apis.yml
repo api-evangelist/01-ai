@@ -6,6 +6,18 @@ description: >-
   01.AI, founded by Kai-Fu Lee, is the creator of the Yi family of open-source and
   proprietary LLMs. The Lingyiwanwu open platform exposes OpenAI-compatible inference for
   Yi-Lightning, Yi-Lightning-Lite, Yi-Large, and Yi-Vision.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
