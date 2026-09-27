@@ -8,15 +8,19 @@ description: >-
   Yi-Lightning, Yi-Lightning-Lite, Yi-Large, and Yi-Vision.
 deliveryModel:
   model: saas
-  open_source: false
+  license_evidence:
+    not_product:
+    - 01-ai/yi
+  open_source: unknown
   commercial: true
   callable_host: true
   label: Hosted service · you call their endpoint
-  confidence: high
+  confidence: low
   source:
   - openapi
   - pricing
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -37,7 +41,7 @@ tags:
   - Artificial Intelligence
   - LLM
   - Yi
-  - Open-Source
+  - Open Source
   - Foundation Models
   - Inference
 tags_raw:
@@ -47,6 +51,7 @@ tags_raw:
   - Open Source
   - Foundation Models
   - Inference
+  - Open-Source
 created: '2026-05-08'
 modified: '2026-05-29'
 specificationVersion: '0.23'
