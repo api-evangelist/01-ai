@@ -10,13 +10,13 @@ servers:
 - url: https://api.lingyiwanwu.com/v1
   description: Lingyiwanwu inference endpoint (OpenAI-compatible)
 tags:
-- name: Chat
+- name: Chat Completions
   description: OpenAI-compatible chat completions for Yi text and vision models.
 paths:
   /chat/completions:
     post:
       tags:
-      - Chat
+      - Chat Completions
       summary: Create a chat completion using a Yi model
       description: OpenAI-compatible chat completions endpoint. Accepts a model identifier (e.g. yi-lightning, yi-large, yi-vision) and a list of messages.
       responses:

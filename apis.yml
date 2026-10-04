@@ -89,16 +89,16 @@ apis:
     url: https://01-ai.github.io/
   - type: Pricing
     url: https://platform.lingyiwanwu.com/
-- aid: 01-ai:01-ai-chat-api
-  name: 01.AI Chat API
+- aid: 01-ai:01-ai-chat-completions-api
+  name: 01.AI Chat Completions API
   description: OpenAI-compatible chat completions for Yi text and vision models.
   humanURL: https://platform.lingyiwanwu.com/docs
   baseURL: https://api.lingyiwanwu.com/v1
   tags:
-  - Chat
+  - Chat Completions
   properties:
   - type: OpenAPI
-    url: openapi/01-ai-chat-api-openapi.yml
+    url: openapi/01-ai-chat-completions-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/01-ai-agentic-access.yml
