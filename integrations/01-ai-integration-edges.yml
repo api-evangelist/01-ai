@@ -1,0 +1,42 @@
+edges:
+- partner_name: Portkey
+  partner: portkey
+  partner_match: router
+  channel: partner-built
+  direction: partner-built
+  type: coverage
+  relationship: system-coverage
+  evidence: https://github.com/Portkey-AI/gateway/tree/main/src/providers/lingyi
+  coverage_role:
+  - provider
+  router_signals:
+    provider:
+      models: null
+      router_ids:
+      - lingyi
+  matched_by: verified-token-table
+  detected_by: sweep-model-routing.py
+  first_seen: '2026-10-13'
+- partner_name: OpenAI
+  partner: openai
+  partner_match: domain
+  type: contract
+  channel: provider-built
+  relationship: compatible
+  direction: provider-built
+  evidence: https://github.com/api-evangelist/01-ai/blob/main/openapi/01-ai-chat-completions-api-openapi.yml#L5
+  contract_reference:
+    repo: 01-ai
+    spec_file: 01-ai-chat-completions-api-openapi.yml
+    property: description
+    value: OpenAI-compatible
+    note: '01-ai declares OpenAI compatibility: ''description: OpenAI-compatible inference API for the Yi family
+      of large language models from 01.AI. Available models include Yi-Lightning, Yi-Lightning-Lite, Yi'''
+    detected_by: sweep-model-routing.py
+    detected: '2026-10-13'
+  detected_by: sweep-model-routing.py
+  first_seen: '2026-10-13'
+generated: '2026-10-13'
+method: searched
+checked:
+- https://github.com/Portkey-AI/gateway/tree/main/src/providers
