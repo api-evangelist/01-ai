@@ -33,7 +33,7 @@ edges:
     note: '01-ai declares OpenAI compatibility: ''description: OpenAI-compatible inference API for the Yi family
       of large language models from 01.AI. Available models include Yi-Lightning, Yi-Lightning-Lite, Yi'''
     detected_by: sweep-model-routing.py
-    detected: '2026-10-13'
+    detected: '2026-10-15'
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
 generated: '2026-10-13'
