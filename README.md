@@ -1,4 +1,4 @@
-# 01.AI (01-ai)
+# 01.AI
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,62 +66,116 @@
 
 01.AI, founded by Kai-Fu Lee, is the creator of the Yi family of open-source and proprietary LLMs. The Lingyiwanwu open platform exposes OpenAI-compatible inference for Yi-Lightning, Yi-Lightning-Lite, Yi-Large, and Yi-Vision.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/01-ai/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/01-ai/refs/heads/main/apis.yml)
+**Areas:** Artificial Intelligence · LLM · Yi · Open Source · Foundation Models · Inference
 
-## Tags
+## 01.AI on APIs.io
 
-- AI
-- LLM
-- Yi
-- Open Source
-- Foundation Models
-- Inference
+Everything profiled for 01.AI is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/01-ai/](https://apis.io/providers/01-ai/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (2)
 
-- **Created:** 2026-05-08
-- **Modified:** 2026-05-29
+- [Lingyiwanwu Platform API](https://apis.io/apis/01-ai/platform/) — OpenAI-compatible chat completions and vision endpoints for the Yi model family. Base URL https://api.lingyiwanwu.com/v1. Available models include…
+- [01.AI Chat Completions API](https://apis.io/apis/01-ai/01-ai-chat-completions-api/) — OpenAI-compatible chat completions for Yi text and vision models.
 
-## APIs
+### Published properties
 
-### Lingyiwanwu Platform API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-OpenAI-compatible chat completions and vision endpoints for the Yi model family. Base URL https://api.lingyiwanwu.com/v1. Available models include Yi-Lightning, Yi-Lightning-Lite, Yi-Large, Yi-Large-Turbo, and Yi-Vision.
+#### Agentic access (1)
 
-- **Human URL:** [https://platform.lingyiwanwu.com/docs](https://platform.lingyiwanwu.com/docs)
-- **Base URL:** `https://api.lingyiwanwu.com/v1`
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Tags
+- [01 Ai Agentic Access](https://apis.io/agentic-access/01-ai/01-ai-agentic-access/)
 
-- AI
-- LLM
-- Chat Completions
-- Vision
-- OpenAI Compatible
-- Yi
+#### Collections (2)
 
-#### Properties
+Postman and Open Collection request collections.
 
-- [Documentation](https://platform.lingyiwanwu.com/docs)
-- [Sign Up](https://platform.lingyiwanwu.com/)
-- [Git Hub](https://github.com/01-ai/Yi)
-- [Tech Blog](https://01-ai.github.io/)
-- [Pricing](https://platform.lingyiwanwu.com/)
-- [Postman Collection](collections/01-ai.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/01-ai.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Lingyiwanwu Platform API](https://apis.io/collections/01-ai/open-01-ai/)
+- [Lingyiwanwu Platform Chat API](https://apis.io/collections/01-ai/open-01-ai-chat-api/)
 
-## Common Properties
+#### Security (2)
 
-- [LinkedIn](https://www.linkedin.com/company/01-ai)
+Authentication, trust centre, and vulnerability disclosure.
+
+- [01 Ai Authentication](https://apis.io/security/01-ai/01-ai-authentication/)
+- [01 Ai Domain Security](https://apis.io/security/01-ai/01-ai-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [01 Ai Plans Pricing](https://apis.io/plans/01-ai/01-ai-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [01 Ai Rate Limits](https://apis.io/rate-limits/01-ai/01-ai-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [01 Ai Finops](https://apis.io/finops/01-ai/01-ai-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.01.ai/)
 - [Documentation](https://platform.lingyiwanwu.com/docs)
-- [Git Hub](https://github.com/01-ai)
-- [Plans](plans/01-ai-plans-pricing.yml)
-- [Rate Limits](rate-limits/01-ai-rate-limits.yml)
-- [Fin Ops](finops/01-ai-finops.yml)
-- [Review](review.yml)
+- [Blog](https://www.lingyiwanwu.com/blog)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 29.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 51.4 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 28.9 |
+
+**Agent readiness 17.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.9** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/01-ai/](https://apis.io/providers/01-ai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 01.AI: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/01-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
