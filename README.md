@@ -85,7 +85,7 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 Which operations an agent can call, which act, and which need a human in the loop.
 
-- [01 Ai Agentic Access](https://apis.io/agentic-access/01-ai/01-ai-agentic-access/)
+- [01.AI Agentic Access](https://apis.io/agentic-access/01-ai/01-ai-agentic-access/)
 
 #### Collections (2)
 
@@ -94,30 +94,36 @@ Postman and Open Collection request collections.
 - [Lingyiwanwu Platform API](https://apis.io/collections/01-ai/open-01-ai/)
 - [Lingyiwanwu Platform Chat API](https://apis.io/collections/01-ai/open-01-ai-chat-api/)
 
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [01.AI API Rules](https://apis.io/rules/01-ai/01-ai-rules/)
+
 #### Security (2)
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [01 Ai Authentication](https://apis.io/security/01-ai/01-ai-authentication/)
-- [01 Ai Domain Security](https://apis.io/security/01-ai/01-ai-domain-security/)
+- [01.AI Authentication](https://apis.io/security/01-ai/01-ai-authentication/)
+- [01.AI Domain Security](https://apis.io/security/01-ai/01-ai-domain-security/)
 
 #### Plans and pricing (1)
 
 Published plans, tiers and prices.
 
-- [01 Ai Plans Pricing](https://apis.io/plans/01-ai/01-ai-plans-pricing/)
+- [01.AI Plans Pricing](https://apis.io/plans/01-ai/01-ai-plans-pricing/)
 
 #### Rate limits (1)
 
 Published request limits.
 
-- [01 Ai Rate Limits](https://apis.io/rate-limits/01-ai/01-ai-rate-limits/)
+- [01.AI Rate Limits](https://apis.io/rate-limits/01-ai/01-ai-rate-limits/)
 
 #### FinOps (1)
 
 What the API costs to run, by operation.
 
-- [01 Ai Finops](https://apis.io/finops/01-ai/01-ai-finops/)
+- [01.AI Finops](https://apis.io/finops/01-ai/01-ai-finops/)
 
 ## Where to find this API
 
@@ -129,18 +135,18 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 29.6** — thin · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 29.2** — thin · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
 | Discoverability | 66.1 |
 | Contract quality | 51.4 |
-| Contract governance | 0.0 |
-| Operational transparency | 10.5 |
+| Contract governance | 13.6 |
+| Operational transparency | 9.5 |
 | Developer ergonomics | 23.8 |
-| Access clarity | 28.9 |
+| Access clarity | 23.4 |
 
-**Agent readiness 17.9** — agent-aware
+**Agent readiness 17.5** — agent-aware
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -163,8 +169,14 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
-**Regulatory alignment 10.9** — AI & Biometrics
+**Regulatory alignment 5.5** — AI & Biometrics
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/01-ai/](https://apis.io/providers/01-ai/).
 
